@@ -8,7 +8,6 @@
   - [`ArrayList()`](#ArrayList)
   - [`ArrayList()`](#ArrayList)
   - [`ArrayList()`](#ArrayList)
-  - [`ArrayList()`](#ArrayList)
   - [`append()`](#append)
   - [`clear()`](#clear)
   - [`copy()`](#copy)
@@ -142,8 +141,6 @@ Create an empty list with the specified initial capacity.
 **Complexity**:
 - Time: `O(1)`
 - Space: `O(n)`
-
-#### `function ArrayList( self, Memory<E> elements, Int elementCount ) -> Void`
 
 #### `function ArrayList( self, Sequence<E> elements ) -> Void`
 

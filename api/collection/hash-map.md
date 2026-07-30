@@ -8,7 +8,6 @@
   - [`HashMap()`](#HashMap)
   - [`HashMap()`](#HashMap)
   - [`HashMap()`](#HashMap)
-  - [`HashMap()`](#HashMap)
   - [`put()`](#put)
   - [`putIfAbsent()`](#putIfAbsent)
   - [`putAll()`](#putAll)
@@ -126,8 +125,6 @@ Create an empty map with the specified initial capacity.
 **Complexity**:
 - Time: `O(n)`
 - Space: `O(n)`
-
-#### `function HashMap( self, Memory<K> keys, Memory<V> values, Int entryCount ) -> Void`
 
 #### `function HashMap( self, Sequence<Pair<K, V>> pairs ) -> Void`
 

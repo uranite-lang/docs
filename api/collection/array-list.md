@@ -7,6 +7,8 @@
   - [`ArrayList()`](#ArrayList)
   - [`ArrayList()`](#ArrayList)
   - [`ArrayList()`](#ArrayList)
+  - [`ArrayList()`](#ArrayList)
+  - [`ArrayList()`](#ArrayList)
   - [`append()`](#append)
   - [`clear()`](#clear)
   - [`copy()`](#copy)
@@ -142,6 +144,34 @@ Create an empty list with the specified initial capacity.
 - Space: `O(n)`
 
 #### `function ArrayList( self, Memory<E> elements, Int elementCount ) -> Void`
+
+#### `function ArrayList( self, Sequence<E> elements ) -> Void`
+
+Create a list populated with all elements from the given sequence.
+
+**Parameters**:
+
+- `elements` (`Sequence<E>`)
+- `The sequence of elements to copy into this list.`
+
+**Complexity**:
+- Time: `O(n)`
+- Space: `O(n)`
+
+#### `function ArrayList( self, Int initialCapacity, Sequence<E> elements ) -> Void`
+
+Create a list with the specified capacity, populated from the given sequence.
+
+**Parameters**:
+
+- `initialCapacity` (`Int`)
+- `The number of element slots to pre-allocate.`
+- `elements` (`Sequence<E>`)
+- `The sequence of elements to copy into this list.`
+
+**Complexity**:
+- Time: `O(n)`
+- Space: `O(n)`
 
 #### `function append( self, E element ) -> ArrayList<E>`
 

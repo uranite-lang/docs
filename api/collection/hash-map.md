@@ -7,6 +7,8 @@
   - [`HashMap()`](#HashMap)
   - [`HashMap()`](#HashMap)
   - [`HashMap()`](#HashMap)
+  - [`HashMap()`](#HashMap)
+  - [`HashMap()`](#HashMap)
   - [`put()`](#put)
   - [`putIfAbsent()`](#putIfAbsent)
   - [`putAll()`](#putAll)
@@ -126,6 +128,34 @@ Create an empty map with the specified initial capacity.
 - Space: `O(n)`
 
 #### `function HashMap( self, Memory<K> keys, Memory<V> values, Int entryCount ) -> Void`
+
+#### `function HashMap( self, Sequence<Pair<K, V>> pairs ) -> Void`
+
+Create a map populated with all key-value pairs from the given sequence.
+
+**Parameters**:
+
+- `pairs` (`Sequence<Pair<K, V>>`)
+- `The sequence of pairs to insert into this map.`
+
+**Complexity**:
+- Time: `O(n)`
+- Space: `O(n)`
+
+#### `function HashMap( self, Int initialCapacity, Sequence<Pair<K, V>> pairs ) -> Void`
+
+Create a map with the specified capacity, populated from the given pairs.
+
+**Parameters**:
+
+- `initialCapacity` (`Int`)
+- `The number of buckets to pre-allocate.`
+- `pairs` (`Sequence<Pair<K, V>>`)
+- `The sequence of pairs to insert into this map.`
+
+**Complexity**:
+- Time: `O(n)`
+- Space: `O(n)`
 
 #### `function computeIndex( self, K key ) -> Int`
 

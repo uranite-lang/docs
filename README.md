@@ -1,15 +1,2 @@
-# uranite
-
-## Table of Contents
-
-- [Imports](#imports)
-
-## Imports
-
-- `uranite.adelia`
-  - `Adelia`
-
-## Exported Symbols
-
-- `Adelia`
-
+# docs
+The Uranite Programming Language Stdlib API Docs

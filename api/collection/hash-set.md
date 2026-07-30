@@ -7,6 +7,8 @@
   - [`HashSet()`](#HashSet)
   - [`HashSet()`](#HashSet)
   - [`HashSet()`](#HashSet)
+  - [`HashSet()`](#HashSet)
+  - [`HashSet()`](#HashSet)
   - [`add()`](#add)
   - [`addAll()`](#addAll)
   - [`discard()`](#discard)
@@ -113,6 +115,34 @@ Create an empty set with the specified initial capacity.
 - Space: `O(n)`
 
 #### `function HashSet( self, Memory<E> elements, Int elementCount ) -> Void`
+
+#### `function HashSet( self, Sequence<E> elements ) -> Void`
+
+Create a set populated with all elements from the given sequence.
+
+**Parameters**:
+
+- `elements` (`Sequence<E>`)
+- `The sequence of elements to add to this set.`
+
+**Complexity**:
+- Time: `O(n)`
+- Space: `O(n)`
+
+#### `function HashSet( self, Int initialCapacity, Sequence<E> elements ) -> Void`
+
+Create a set with the specified capacity, populated from the given sequence.
+
+**Parameters**:
+
+- `initialCapacity` (`Int`)
+- `The number of buckets to pre-allocate.`
+- `elements` (`Sequence<E>`)
+- `The sequence of elements to add to this set.`
+
+**Complexity**:
+- Time: `O(n)`
+- Space: `O(n)`
 
 #### `function computeIndex( self, E element ) -> Int`
 

@@ -8,7 +8,6 @@
   - [`HashSet()`](#HashSet)
   - [`HashSet()`](#HashSet)
   - [`HashSet()`](#HashSet)
-  - [`HashSet()`](#HashSet)
   - [`add()`](#add)
   - [`addAll()`](#addAll)
   - [`discard()`](#discard)
@@ -113,8 +112,6 @@ Create an empty set with the specified initial capacity.
 **Complexity**:
 - Time: `O(n)`
 - Space: `O(n)`
-
-#### `function HashSet( self, Memory<E> elements, Int elementCount ) -> Void`
 
 #### `function HashSet( self, Sequence<E> elements ) -> Void`
 

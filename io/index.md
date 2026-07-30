@@ -1,0 +1,204 @@
+# uranite.io
+
+## Table of Contents
+
+- [Imports](#imports)
+
+## Imports
+
+- `uranite.io.binary-reader`
+  - `BinaryReader`
+- `uranite.io.binary-writer`
+  - `BinaryWriter`
+- `uranite.io.buffered-reader`
+  - `BufferedReader`
+- `uranite.io.buffered-writer`
+  - `BufferedWriter`
+- `uranite.io.console`
+  - `getpass`
+  - `input`
+  - `puts`
+  - `putsI64`
+  - `putserr`
+  - `putserrln`
+  - `putsln`
+- `uranite.io.directory`
+  - `DirectoryEntry`
+  - `DirectoryIterator`
+  - `EntryType`
+  - `countContents`
+  - `listdir`
+  - `makedirs`
+  - `mkdir`
+  - `removetree`
+  - `rmdir`
+- `uranite.io.errors`
+  - `BrokenPipeError`
+  - `DirectoryNotEmptyError`
+  - `FileExistsError`
+  - `FileNotFoundError`
+  - `IOError`
+  - `IsADirectoryError`
+  - `NotADirectoryError`
+  - `PermissionError`
+- `uranite.io.file`
+  - `File`
+  - `appendFile`
+  - `createFile`
+  - `openFile`
+  - `readFileString`
+  - `writeFileString`
+- `uranite.io.filesystem`
+  - `FilesystemInfo`
+  - `Pipe`
+  - `chdir`
+  - `chmod`
+  - `chown`
+  - `copy`
+  - `fchmod`
+  - `fchown`
+  - `getTerminalCols`
+  - `getTerminalRows`
+  - `getTerminalSize`
+  - `getcwd`
+  - `hardlink`
+  - `lockExclusive`
+  - `lockShared`
+  - `moveFile`
+  - `remove`
+  - `rename`
+  - `restoreMode`
+  - `setRawMode`
+  - `statfs`
+  - `symlink`
+  - `tempDir`
+  - `tempFile`
+  - `tryLockExclusive`
+  - `unlock`
+- `uranite.io.line-iterator`
+  - `LineIterator`
+- `uranite.io.path`
+  - `absolute`
+  - `basename`
+  - `dirname`
+  - `exists`
+  - `extension`
+  - `isDir`
+  - `isFile`
+  - `isSymlink`
+  - `join`
+  - `readlink`
+  - `stem`
+- `uranite.io.stat`
+  - `FileStat`
+  - `FileType`
+  - `fstatFd`
+  - `lstatPath`
+  - `statPath`
+- `uranite.io.stream`
+  - `InputStream`
+  - `OutputStream`
+- `uranite.io.string-reader`
+  - `StringReader`
+- `uranite.io.string-writer`
+  - `StringWriter`
+- `uranite.io.writer`
+  - `STDERR_FD`
+  - `STDIN_FD`
+  - `STDOUT_FD`
+  - `writeFd`
+  - `writeLineFd`
+  - `writeNewlineFd`
+  - `writeRawFd`
+
+## Exported Symbols
+
+- `BinaryReader`
+- `BinaryWriter`
+- `BrokenPipeError`
+- `BufferedReader`
+- `BufferedWriter`
+- `DirectoryEntry`
+- `DirectoryIterator`
+- `DirectoryNotEmptyError`
+- `EntryType`
+- `File`
+- `FileExistsError`
+- `FileNotFoundError`
+- `FileStat`
+- `FileType`
+- `FilesystemInfo`
+- `IOError`
+- `InputStream`
+- `IsADirectoryError`
+- `LineIterator`
+- `NotADirectoryError`
+- `OutputStream`
+- `PermissionError`
+- `Pipe`
+- `STDERR_FD`
+- `STDIN_FD`
+- `STDOUT_FD`
+- `StringReader`
+- `StringWriter`
+- `absolute`
+- `appendFile`
+- `basename`
+- `chdir`
+- `chmod`
+- `chown`
+- `copy`
+- `countContents`
+- `createFile`
+- `dirname`
+- `exists`
+- `extension`
+- `fchmod`
+- `fchown`
+- `fstatFd`
+- `getTerminalCols`
+- `getTerminalRows`
+- `getTerminalSize`
+- `getcwd`
+- `getpass`
+- `hardlink`
+- `input`
+- `isDir`
+- `isFile`
+- `isSymlink`
+- `join`
+- `listdir`
+- `lockExclusive`
+- `lockShared`
+- `lstatPath`
+- `makedirs`
+- `mkdir`
+- `moveFile`
+- `openFile`
+- `puts`
+- `putsI64`
+- `putserr`
+- `putserrln`
+- `putsln`
+- `readFileString`
+- `readlink`
+- `remove`
+- `removetree`
+- `rename`
+- `restoreMode`
+- `rmdir`
+- `setRawMode`
+- `statPath`
+- `statfs`
+- `stem`
+- `symlink`
+- `tempDir`
+- `tempFile`
+- `tryLockExclusive`
+- `unlock`
+- `writeFd`
+- `writeFileString`
+- `writeLineFd`
+- `writeNewlineFd`
+- `writeRawFd`
+

@@ -1,0 +1,121 @@
+# uranite.encoding
+
+## Table of Contents
+
+- [Imports](#imports)
+
+## Imports
+
+- `uranite.encoding.base64`
+  - `Base64Error`
+  - `base64Decode`
+  - `base64DecodedLength`
+  - `base64Encode`
+  - `base64EncodedLength`
+- `uranite.encoding.binary`
+  - `copyBytes`
+  - `readI16Be`
+  - `readI32Be`
+  - `readI64Be`
+  - `readI8`
+  - `readUnsignedVarI32`
+  - `readVarI32`
+  - `readVarI64`
+  - `readVarI64WithLength`
+  - `writeI16Be`
+  - `writeI32Be`
+  - `writeI64Be`
+  - `writeI8`
+  - `writeUnsignedVarI32`
+  - `writeVarI32`
+  - `writeVarI64`
+- `uranite.encoding.buffer`
+  - `BinaryBuffer`
+  - `BufferOverflowError`
+- `uranite.encoding.crc32`
+  - `crc32`
+  - `crc32Finalize`
+  - `crc32Update`
+- `uranite.encoding.crc32c`
+  - `crc32c`
+  - `crc32cFinalize`
+  - `crc32cUpdate`
+- `uranite.encoding.der`
+  - `DER_TAG_BIT_STRING`
+  - `DER_TAG_CONTEXT_0`
+  - `DER_TAG_CONTEXT_1`
+  - `DER_TAG_CONTEXT_3`
+  - `DER_TAG_INTEGER`
+  - `DER_TAG_NULL`
+  - `DER_TAG_OCTET_STRING`
+  - `DER_TAG_OID`
+  - `DER_TAG_SEQUENCE`
+  - `DER_TAG_SET`
+  - `DerElement`
+  - `derCountSequenceElements`
+  - `derGetIntegerBytes`
+  - `derIntegerToI64`
+  - `derIterateSequence`
+  - `derParseBitString`
+  - `derParseElement`
+  - `derParseInteger`
+  - `derParseSequence`
+- `uranite.encoding.pem`
+  - `PemBlock`
+  - `pemDecode`
+  - `pemDecodeString`
+
+## Exported Symbols
+
+- `Base64Error`
+- `BinaryBuffer`
+- `BufferOverflowError`
+- `DER_TAG_BIT_STRING`
+- `DER_TAG_CONTEXT_0`
+- `DER_TAG_CONTEXT_1`
+- `DER_TAG_CONTEXT_3`
+- `DER_TAG_INTEGER`
+- `DER_TAG_NULL`
+- `DER_TAG_OCTET_STRING`
+- `DER_TAG_OID`
+- `DER_TAG_SEQUENCE`
+- `DER_TAG_SET`
+- `DerElement`
+- `PemBlock`
+- `base64Decode`
+- `base64DecodedLength`
+- `base64Encode`
+- `base64EncodedLength`
+- `copyBytes`
+- `crc32`
+- `crc32Finalize`
+- `crc32Update`
+- `crc32c`
+- `crc32cFinalize`
+- `crc32cUpdate`
+- `derCountSequenceElements`
+- `derGetIntegerBytes`
+- `derIntegerToI64`
+- `derIterateSequence`
+- `derParseBitString`
+- `derParseElement`
+- `derParseInteger`
+- `derParseSequence`
+- `pemDecode`
+- `pemDecodeString`
+- `readI16Be`
+- `readI32Be`
+- `readI64Be`
+- `readI8`
+- `readUnsignedVarI32`
+- `readVarI32`
+- `readVarI64`
+- `readVarI64WithLength`
+- `writeI16Be`
+- `writeI32Be`
+- `writeI64Be`
+- `writeI8`
+- `writeUnsignedVarI32`
+- `writeVarI32`
+- `writeVarI64`
+

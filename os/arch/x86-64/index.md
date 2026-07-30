@@ -1,0 +1,107 @@
+# uranite.os.arch.x86-64
+
+## Table of Contents
+
+- [Imports](#imports)
+
+## Imports
+
+- `uranite.os.arch.x86-64.cpu`
+  - `Registers`
+  - `disableInterrupts`
+  - `enableInterrupts`
+  - `halt`
+  - `invlpg`
+  - `readCr3`
+  - `readMsr`
+  - `readTsc`
+  - `writeCr3`
+  - `writeMsr`
+- `uranite.os.arch.x86-64.gdt`
+  - `Gdt`
+  - `GdtEntry`
+  - `GdtPointer`
+  - `loadGdt`
+- `uranite.os.arch.x86-64.idt`
+  - `GateType`
+  - `IRQ_BASE`
+  - `Idt`
+  - `IdtEntry`
+  - `IdtPointer`
+  - `InterruptVector`
+  - `loadIdt`
+- `uranite.os.arch.x86-64.paging`
+  - `HUGE_PAGE_1GB`
+  - `HUGE_PAGE_2MB`
+  - `PAGE_ACCESSED`
+  - `PAGE_CACHE_DISABLE`
+  - `PAGE_DIRTY`
+  - `PAGE_GLOBAL`
+  - `PAGE_HUGE`
+  - `PAGE_PRESENT`
+  - `PAGE_SIZE`
+  - `PAGE_USER`
+  - `PAGE_WRITABLE`
+  - `PAGE_WRITE_THROUGH`
+  - `PageTable`
+  - `PageTableEntry`
+  - `flushPage`
+  - `flushTlb`
+  - `pageNoExecute`
+- `uranite.os.arch.x86-64.port`
+  - `inb`
+  - `inl`
+  - `inw`
+  - `ioWait`
+  - `outb`
+  - `outl`
+  - `outw`
+
+## Exported Symbols
+
+- `GateType`
+- `Gdt`
+- `GdtEntry`
+- `GdtPointer`
+- `HUGE_PAGE_1GB`
+- `HUGE_PAGE_2MB`
+- `IRQ_BASE`
+- `Idt`
+- `IdtEntry`
+- `IdtPointer`
+- `InterruptVector`
+- `PAGE_ACCESSED`
+- `PAGE_CACHE_DISABLE`
+- `PAGE_DIRTY`
+- `PAGE_GLOBAL`
+- `PAGE_HUGE`
+- `PAGE_PRESENT`
+- `PAGE_SIZE`
+- `PAGE_USER`
+- `PAGE_WRITABLE`
+- `PAGE_WRITE_THROUGH`
+- `PageTable`
+- `PageTableEntry`
+- `Registers`
+- `disableInterrupts`
+- `enableInterrupts`
+- `flushPage`
+- `flushTlb`
+- `halt`
+- `inb`
+- `inl`
+- `invlpg`
+- `inw`
+- `ioWait`
+- `loadGdt`
+- `loadIdt`
+- `outb`
+- `outl`
+- `outw`
+- `pageNoExecute`
+- `readCr3`
+- `readMsr`
+- `readTsc`
+- `writeCr3`
+- `writeMsr`
+

@@ -1,0 +1,39 @@
+# uranite.os.power
+
+## Table of Contents
+
+- [Imports](#imports)
+
+## Imports
+
+- `uranite.os.power.power`
+  - `CPU_STATE_ACTIVE`
+  - `CPU_STATE_DEEP_SLEEP`
+  - `CPU_STATE_HALT`
+  - `CPU_STATE_STOP_CLOCK`
+  - `POWER_EVENT_REBOOT`
+  - `POWER_EVENT_RESUME`
+  - `POWER_EVENT_SHUTDOWN`
+  - `POWER_EVENT_SUSPEND`
+  - `PowerManager`
+  - `SYSTEM_OFF`
+  - `SYSTEM_RUNNING`
+  - `SYSTEM_STANDBY`
+  - `SYSTEM_SUSPEND`
+
+## Exported Symbols
+
+- `CPU_STATE_ACTIVE`
+- `CPU_STATE_DEEP_SLEEP`
+- `CPU_STATE_HALT`
+- `CPU_STATE_STOP_CLOCK`
+- `POWER_EVENT_REBOOT`
+- `POWER_EVENT_RESUME`
+- `POWER_EVENT_SHUTDOWN`
+- `POWER_EVENT_SUSPEND`
+- `PowerManager`
+- `SYSTEM_OFF`
+- `SYSTEM_RUNNING`
+- `SYSTEM_STANDBY`
+- `SYSTEM_SUSPEND`
+

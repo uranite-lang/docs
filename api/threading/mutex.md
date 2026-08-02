@@ -33,7 +33,7 @@
 - `uranite.threading.atomic`
   - `AtomicBoolean`
 - `uranite.threading.errors`
-  - `PoisonError`
+  - `ThreadPoisonError`
 
 ## class `MutexGuard`<T>
 
@@ -84,7 +84,7 @@ Release the lock, allowing other tasks to acquire the mutex. After calling relea
 
 ## class `Mutex`<T>
 
-Data-protecting mutual exclusion lock. Owns the protected data -- the value is only accessible through a MutexGuard obtained from lock() or tryLock(). Supports poison detection: if a thread panics while holding the lock, subsequent lock attempts will raise a PoisonError.
+Data-protecting mutual exclusion lock. Owns the protected data -- the value is only accessible through a MutexGuard obtained from lock() or tryLock(). Supports poison detection: if a thread panics while holding the lock, subsequent lock attempts will raise a ThreadPoisonError.
 
 Built on KernelMutex from the OS sync module with cooperative blocking through the scheduler when contention occurs.
 
@@ -123,7 +123,7 @@ Acquire the mutex, blocking the current task until the lock is available. Uses c
 
 **Raises**:
 
-- `PoisonError` — If the mutex was poisoned by a panicked lock holder.
+- `ThreadPoisonError` → `ThreadError` → `Error` — If the mutex was poisoned by a panicked lock holder.
 
 **Complexity**:
 - Time: `O(1) amortized, unbounded under contention`
@@ -167,7 +167,7 @@ Release the kernel mutex and yield the current task to allow other waiters to ac
 
 #### `function poison( self ) -> Void`
 
-Mark the mutex as poisoned. Subsequent lock attempts will raise a PoisonError. Typically called when a thread panics while holding the lock.
+Mark the mutex as poisoned. Subsequent lock attempts will raise a ThreadPoisonError. Typically called when a thread panics while holding the lock.
 
 #### `function isPoisoned( self ) -> Boolean`
 
@@ -186,7 +186,7 @@ Acquire the mutex, execute the critical section callback with the protected data
 
 **Raises**:
 
-- `PoisonError` — If the mutex is poisoned.
+- `ThreadPoisonError` → `ThreadError` → `Error` — If the mutex is poisoned.
 
 **Complexity**:
 - Time: `O(1) for lock/unlock, plus O(criticalSection)`

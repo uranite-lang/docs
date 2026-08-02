@@ -8,6 +8,7 @@
 - [class `IoRequestQueue`](#class-iorequestqueue)
   - [`IoRequestQueue()`](#IoRequestQueue)
   - [`submit()`](#submit)
+  - [`submit()`](#submit)
   - [`dequeue()`](#dequeue)
   - [`complete()`](#complete)
   - [`fail()`](#fail)
@@ -98,6 +99,8 @@ The request index on success, or -1 if the queue is full.
 **Complexity**:
 - Time: `O(1)`
 - Space: `O(1)`
+
+#### `function submit( self, RequestType reqType, I64 deviceId, I64 blockNumber, I64 bufferAddr, I64 length, I64 tag ) -> I64`
 
 #### `function dequeue( self ) -> I64`
 

@@ -37,7 +37,7 @@
 - `uranite.threading.atomic`
   - `AtomicBoolean`
 - `uranite.threading.errors`
-  - `PoisonError`
+  - `ThreadPoisonError`
 
 ## class `ReadGuard`<T>
 
@@ -122,7 +122,7 @@ Release the write lock, allowing pending readers or writers to acquire access. A
 
 Data-protecting reader-writer lock. Allows multiple concurrent readers or a single exclusive writer. Owns the protected data -- access is only granted through ReadGuard or WriteGuard instances obtained from readLock()/writeLock() or their non-blocking tryReadLock()/tryWriteLock() variants.
 
-Supports poison detection: if a thread panics while holding a write lock, subsequent lock attempts will raise a PoisonError. Built on ReadWriteLock from the OS sync module with cooperative blocking through the scheduler when contention occurs.
+Supports poison detection: if a thread panics while holding a write lock, subsequent lock attempts will raise a ThreadPoisonError. Built on ReadWriteLock from the OS sync module with cooperative blocking through the scheduler when contention occurs.
 
 ### Fields
 
@@ -159,7 +159,7 @@ Acquire a shared read lock, blocking the current task until the lock is availabl
 
 **Raises**:
 
-- `PoisonError` — If the lock was poisoned by a panicked writer.
+- `ThreadPoisonError` → `ThreadError` → `Error` — If the lock was poisoned by a panicked writer.
 
 **Complexity**:
 - Time: `O(n)`
@@ -173,7 +173,7 @@ Acquire an exclusive write lock, blocking the current task until no other reader
 
 **Raises**:
 
-- `PoisonError` — If the lock was poisoned by a panicked writer.
+- `ThreadPoisonError` → `ThreadError` → `Error` — If the lock was poisoned by a panicked writer.
 
 **Complexity**:
 - Time: `O(n)`
@@ -228,7 +228,7 @@ Release the write lock and yield the current task. Called by WriteGuard.release(
 
 #### `function poison( self ) -> Void`
 
-Mark the lock as poisoned. Subsequent lock attempts will raise a PoisonError. Typically called when a thread panics while holding the write lock.
+Mark the lock as poisoned. Subsequent lock attempts will raise a ThreadPoisonError. Typically called when a thread panics while holding the write lock.
 
 #### `function isPoisoned( self ) -> Boolean`
 

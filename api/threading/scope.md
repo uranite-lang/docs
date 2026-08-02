@@ -15,7 +15,7 @@
 - `uranite.memory.memory`
   - `Memory`
 - `uranite.threading.errors`
-  - `PoisonError`
+  - `ThreadPoisonError`
   - `ThreadError`
 - `uranite.threading.join-handle`
   - `JoinHandle`

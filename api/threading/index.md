@@ -18,11 +18,11 @@
 - `uranite.threading.condvar`
   - `CondVar`
 - `uranite.threading.errors`
-  - `CancellationError`
-  - `ChannelError`
-  - `PoisonError`
+  - `ThreadCancellationError`
+  - `ThreadChannelError`
+  - `ThreadPoisonError`
   - `ThreadError`
-  - `TimeoutError`
+  - `ThreadTimeoutError`
 - `uranite.threading.executor`
   - `TaskSubmitter0`
   - `TaskSubmitter1`
@@ -62,8 +62,8 @@
 - `AtomicBoolean`
 - `AtomicI64`
 - `Barrier`
-- `CancellationError`
-- `ChannelError`
+- `ThreadCancellationError`
+- `ThreadChannelError`
 - `ChannelInner`
 - `CondVar`
 - `Future`
@@ -73,7 +73,7 @@
 - `Mutex`
 - `MutexGuard`
 - `Once`
-- `PoisonError`
+- `ThreadPoisonError`
 - `PoolHandle`
 - `PoolTask`
 - `ReadGuard`
@@ -92,6 +92,6 @@
 - `ThreadPool`
 - `ThreadPoolExecutor`
 - `ThreadRuntime`
-- `TimeoutError`
+- `ThreadTimeoutError`
 - `WriteGuard`
 

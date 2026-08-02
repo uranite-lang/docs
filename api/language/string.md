@@ -131,14 +131,5 @@ Return a hash code for this string.
 
 #### `function format( self, [I64] args[] ) -> String`
 
-Format this string, replacing {} placeholders with positional arguments.
-
-Each {} in the template is replaced with the next positional argument, interpreted as a string pointer. Arguments beyond the placeholder count are ignored; excess placeholders are left as literal {}.
-
-**Parameters**:
-
-- `args` (`I64[]`)
-- `Positional arguments. Each value is treated as a raw string pointer.`
-
-**Returns**: `String` — The formatted string with placeholders substituted.
+Format this string, replacing {} placeholders with positional arguments. 
 

@@ -22,7 +22,9 @@ Static utility class for snapping arbitrary RGB colors to the nearest web-safe c
 
 ### Methods
 
-#### `function snapComponent( self, I32 component ) -> I32`
+#### `function snapComponent( I32 component ) -> I32`
+
+`static` 
 
 Snap a single RGB channel value (0-255) to the nearest web-safe value by dividing by 51, rounding to the nearest integer, and multiplying back by 51. The six possible output values are 0, 51, 102, 153, 204, and 255.
 
@@ -33,7 +35,9 @@ Snap a single RGB channel value (0-255) to the nearest web-safe value by dividin
 
 **Returns**: `I32` — The nearest web-safe value for this channel.
 
-#### `function snap( self, I32 red, I32 green, I32 blue ) -> RGB`
+#### `function snap( I32 red, I32 green, I32 blue ) -> RGB`
+
+`static` 
 
 Snap all three RGB channels independently to the nearest web-safe values, returning the resulting web-safe color as an RGB struct.
 
@@ -53,7 +57,9 @@ An RGB struct with each channel snapped to web-safe values.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function snapHex( self, I32 hex ) -> I32`
+#### `function snapHex( I32 hex ) -> I32`
+
+`static` 
 
 Snap a packed 24-bit hex color to the nearest web-safe color and return the result as a packed hex integer.
 
@@ -69,7 +75,9 @@ The nearest web-safe color as a packed hex value.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function isWebSafe( self, I32 red, I32 green, I32 blue ) -> Boolean`
+#### `function isWebSafe( I32 red, I32 green, I32 blue ) -> Boolean`
+
+`static` 
 
 Check whether the given RGB color is already a web-safe color, meaning each channel value is exactly one of 0, 51, 102, 153, 204, or 255.
 
@@ -84,7 +92,9 @@ Check whether the given RGB color is already a web-safe color, meaning each chan
 
 **Returns**: `Boolean` — True if all three channels are web-safe values.
 
-#### `function isComponentWebSafe( self, I32 component ) -> Boolean`
+#### `function isComponentWebSafe( I32 component ) -> Boolean`
+
+`static` 
 
 Check whether a single channel value is a web-safe value by verifying it is evenly divisible by 51.
 

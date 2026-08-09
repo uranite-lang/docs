@@ -21,7 +21,9 @@ Static utility class providing distance and similarity metrics for comparing two
 
 ### Methods
 
-#### `function euclidean( self, RGB first, RGB second ) -> F64`
+#### `function euclidean( RGB first, RGB second ) -> F64`
+
+`static` 
 
 Compute the standard Euclidean distance between two colors in RGB space, treating each color as a point in a 3D coordinate system where the axes are red (0-255), green (0-255), and blue (0-255). The maximum possible distance is approximately 441.67, which is the distance between black (0,0,0) and white (255,255,255).
 
@@ -39,7 +41,9 @@ The Euclidean distance from 0.0 (identical) to approximately 441.67.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function redmean( self, RGB first, RGB second ) -> F64`
+#### `function redmean( RGB first, RGB second ) -> F64`
+
+`static` 
 
 Compute a perceptually weighted color distance using the redmean algorithm. This method weights the red, green, and blue channel differences based on the average red value of the two colors being compared, producing results that better approximate how the human eye perceives color differences. The formula increases the weight of the red channel for colors with high red content and increases the weight of the blue channel for colors with low red content. Green always receives the highest weight because the human eye is most sensitive to green variations.
 
@@ -57,7 +61,9 @@ The weighted perceptual distance between the two colors.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function similarity( self, RGB first, RGB second ) -> F64`
+#### `function similarity( RGB first, RGB second ) -> F64`
+
+`static` 
 
 Compute a similarity percentage between two colors using the redmean distance algorithm. Returns 0.0 when the colors are identical and 100.0 when they are maximally different. The result is normalized against the maximum possible redmean distance (the distance between black and white).
 

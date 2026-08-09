@@ -22,7 +22,9 @@ Static utility class for generating CSS-compatible color value strings in three 
 
 ### Methods
 
-#### `function hex( self, I32 hexValue ) -> String`
+#### `function hex( I32 hexValue ) -> String`
+
+`static` 
 
 Format a packed 24-bit hex color value as a CSS hex color string with a leading hash symbol and six lowercase hexadecimal digits.
 
@@ -38,7 +40,9 @@ A CSS hex color string such as "#004b49".
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function rgb( self, I32 red, I32 green, I32 blue ) -> String`
+#### `function rgb( I32 red, I32 green, I32 blue ) -> String`
+
+`static` 
 
 Format RGB channel values as a CSS rgb() functional notation string with integer decimal values separated by commas.
 
@@ -53,7 +57,9 @@ Format RGB channel values as a CSS rgb() functional notation string with integer
 
 **Returns**: `String` — A CSS rgb string such as "rgb(0, 75, 73)".
 
-#### `function hsl( self, F64 hue, F64 saturation, F64 lightness ) -> String`
+#### `function hsl( F64 hue, F64 saturation, F64 lightness ) -> String`
+
+`static` 
 
 Format HSL component values as a CSS hsl() functional notation string with the hue in degrees (no unit suffix) and saturation and lightness as percentages with the percent symbol.
 
@@ -73,7 +79,9 @@ A CSS hsl string such as "hsl(178, 100%, 15%)".
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function hexFromRgb( self, I32 red, I32 green, I32 blue ) -> String`
+#### `function hexFromRgb( I32 red, I32 green, I32 blue ) -> String`
+
+`static` 
 
 Format RGB channel values as a CSS hex color string by first packing them into a 24-bit integer and then formatting with a leading hash.
 
@@ -88,7 +96,9 @@ Format RGB channel values as a CSS hex color string by first packing them into a
 
 **Returns**: `String` — A CSS hex color string such as "#004b49".
 
-#### `function byteToHex( self, I32 value ) -> String`
+#### `function byteToHex( I32 value ) -> String`
+
+`static` 
 
 Convert a single byte value (0-255) to a two-character lowercase hexadecimal string. Values less than 16 are zero-padded to maintain the two-character width.
 

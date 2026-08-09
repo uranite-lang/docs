@@ -254,7 +254,9 @@ Return a human-readable string representation of this color showing the CSS hex 
 
 **Returns**: `String` — A string such as "Color(#004b49)".
 
-#### `function fromRgb( self, I32 red, I32 green, I32 blue ) -> Color`
+#### `function fromRgb( I32 red, I32 green, I32 blue ) -> Color`
+
+`static` 
 
 Create a Color from individual RGB channel values by packing them into a 24-bit hex integer.
 
@@ -274,7 +276,9 @@ A new Color instance with the given RGB values.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function fromHsl( self, F64 hue, F64 saturation, F64 lightness ) -> Color`
+#### `function fromHsl( F64 hue, F64 saturation, F64 lightness ) -> Color`
+
+`static` 
 
 Create a Color from HSL components by converting to RGB and packing into a hex value.
 
@@ -294,7 +298,9 @@ A new Color instance with the equivalent hex value.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function fromHsv( self, F64 hue, F64 saturation, F64 value ) -> Color`
+#### `function fromHsv( F64 hue, F64 saturation, F64 value ) -> Color`
+
+`static` 
 
 Create a Color from HSV components by converting to RGB and packing into a hex value.
 
@@ -314,7 +320,9 @@ A new Color instance with the equivalent hex value.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function fromCmyk( self, F64 cyan, F64 magenta, F64 yellow, F64 key ) -> Color`
+#### `function fromCmyk( F64 cyan, F64 magenta, F64 yellow, F64 key ) -> Color`
+
+`static` 
 
 Create a Color from CMYK components by converting to RGB and packing into a hex value.
 

@@ -34,7 +34,6 @@ Console log handler with ANSI color styling via Adelia. Maps log levels to color
 |------|------|--------|
 | `formatter` | `LogFormatter` | public |
 | `minLevel` | `LogLevel` | public |
-| `ansiFormatter` | `AnsiFormatter` | public |
 
 ### Methods
 

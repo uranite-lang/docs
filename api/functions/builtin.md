@@ -3,6 +3,8 @@
 ## Table of Contents
 
 - [Imports](#imports)
+- [function `enumerate`](#function-enumerate)
+  - [`enumerate()`](#enumerate)
 - [function `length`](#function-length)
   - [`length()`](#length)
 - [function `charAt`](#function-charat)
@@ -60,12 +62,18 @@
 
 - `uranite.collection.array-list`
   - `ArrayList`
+- `uranite.collection.generator`
+  - `Generator`
+- `uranite.collection.pair`
+  - `Pair`
 - `uranite.io.syscall`
   - `ptrToString`
   - `readByteAt`
   - `stringLen`
   - `stringToPtr`
   - `writeByteAt`
+- `uranite.iterators.iterable`
+  - `Iterable`
 - `uranite.memory.allocator`
   - `alloc`
   - `dealloc`
@@ -73,6 +81,12 @@
   - `Memory`
 - `uranite.string.builder`
   - `StringBuilder`
+
+## function `enumerate`
+
+### Methods
+
+#### `function enumerate( Iterable<E> elements, Int start, Int stop ) -> Generator<Pair<Int, E>>`
 
 ## function `length`
 

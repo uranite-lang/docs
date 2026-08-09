@@ -31,7 +31,9 @@ Static utility class for generating harmonious color palettes from a single base
 
 ### Methods
 
-#### `function complementary( self, I32 baseHex ) -> ColorPalette`
+#### `function complementary( I32 baseHex ) -> ColorPalette`
+
+`static` 
 
 Generate a complementary palette containing the base color and its complement (hue rotated 180 degrees). Complementary colors provide maximum contrast and visual tension, making them ideal for call-to-action elements and attention-grabbing designs.
 
@@ -47,7 +49,9 @@ A palette named "Complementary" with 2 colors.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function triadic( self, I32 baseHex ) -> ColorPalette`
+#### `function triadic( I32 baseHex ) -> ColorPalette`
+
+`static` 
 
 Generate a triadic palette containing the base color and two colors at 120 and 240 degrees around the color wheel. Triadic palettes offer vibrant contrast while maintaining color harmony, forming an equilateral triangle on the color wheel.
 
@@ -63,7 +67,9 @@ A palette named "Triadic" with 3 colors.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function analogous( self, I32 baseHex ) -> ColorPalette`
+#### `function analogous( I32 baseHex ) -> ColorPalette`
+
+`static` 
 
 Generate an analogous palette containing the base color and two adjacent colors at +30 and -30 degrees on the color wheel. Analogous palettes create a sense of unity and harmony because the colors share similar underlying hues, making them ideal for cohesive, soothing designs.
 
@@ -79,7 +85,9 @@ A palette named "Analogous" with 3 colors.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function splitComplementary( self, I32 baseHex ) -> ColorPalette`
+#### `function splitComplementary( I32 baseHex ) -> ColorPalette`
+
+`static` 
 
 Generate a split-complementary palette containing the base color and two colors flanking the complement at 150 and 210 degrees. This palette type provides strong visual contrast similar to complementary but with less tension, as the two accent colors are near-complements rather than direct opposites.
 
@@ -95,7 +103,9 @@ A palette named "Split Complementary" with 3 colors.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function tints( self, I32 baseHex, I64 count ) -> ColorPalette`
+#### `function tints( I32 baseHex, I64 count ) -> ColorPalette`
+
+`static` 
 
 Generate a palette of progressively lighter tints of the base color by increasing the lightness component in equal steps toward 1.0 (white) while preserving the hue and saturation. Tints are created by mixing a color with white.
 
@@ -113,7 +123,9 @@ A palette named "Tints" with count+1 colors from base to lightest.
 - Time: `O(count)`
 - Space: `O(count)`
 
-#### `function shades( self, I32 baseHex, I64 count ) -> ColorPalette`
+#### `function shades( I32 baseHex, I64 count ) -> ColorPalette`
+
+`static` 
 
 Generate a palette of progressively darker shades of the base color by decreasing the lightness component in equal steps toward 0.0 (black) while preserving the hue and saturation. Shades are created by mixing a color with black.
 
@@ -131,7 +143,9 @@ A palette named "Shades" with count+1 colors from base to darkest.
 - Time: `O(count)`
 - Space: `O(count)`
 
-#### `function monochromatic( self, I32 baseHex, I64 count ) -> ColorPalette`
+#### `function monochromatic( I32 baseHex, I64 count ) -> ColorPalette`
+
+`static` 
 
 Generate a monochromatic palette containing tints and shades of the base color, arranged from darkest to lightest with the base color in the middle. The total palette size is count*2 + 1 (count shades + base + count tints).
 
@@ -149,7 +163,9 @@ A palette named "Monochromatic" with 2*count+1 colors.
 - Time: `O(count)`
 - Space: `O(count)`
 
-#### `function rotateHue( self, F64 hue, F64 degrees ) -> F64`
+#### `function rotateHue( F64 hue, F64 degrees ) -> F64`
+
+`static` 
 
 Rotate a hue angle by the given number of degrees, wrapping around the 0-360 degree range. Handles both positive (clockwise) and negative (counter-clockwise) rotations correctly by adding 360 before applying fmod to ensure a positive result.
 

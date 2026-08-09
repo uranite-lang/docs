@@ -27,7 +27,9 @@ Static utility class for generating ANSI 24-bit true color escape sequences used
 
 ### Methods
 
-#### `function foreground( self, I32 red, I32 green, I32 blue ) -> String`
+#### `function foreground( I32 red, I32 green, I32 blue ) -> String`
+
+`static` 
 
 Generate an ANSI escape sequence that sets the terminal foreground (text) color to the specified RGB value using the 24-bit true color format.
 
@@ -42,7 +44,9 @@ Generate an ANSI escape sequence that sets the terminal foreground (text) color 
 
 **Returns**: `String` — The ANSI escape sequence string such as "\x1b[38;2;255;0;0m".
 
-#### `function background( self, I32 red, I32 green, I32 blue ) -> String`
+#### `function background( I32 red, I32 green, I32 blue ) -> String`
+
+`static` 
 
 Generate an ANSI escape sequence that sets the terminal background color to the specified RGB value using the 24-bit true color format.
 
@@ -57,7 +61,9 @@ Generate an ANSI escape sequence that sets the terminal background color to the 
 
 **Returns**: `String` — The ANSI escape sequence string such as "\x1b[48;2;0;75;73m".
 
-#### `function colorize( self, String text, I32 red, I32 green, I32 blue ) -> String`
+#### `function colorize( String text, I32 red, I32 green, I32 blue ) -> String`
+
+`static` 
 
 Wrap the given text string with a foreground color escape sequence and an automatic reset sequence, so only the specified text is colored and the terminal returns to default colors afterward.
 
@@ -74,7 +80,9 @@ Wrap the given text string with a foreground color escape sequence and an automa
 
 **Returns**: `String` — The text wrapped with foreground color and reset escape sequences.
 
-#### `function highlight( self, String text, I32 red, I32 green, I32 blue ) -> String`
+#### `function highlight( String text, I32 red, I32 green, I32 blue ) -> String`
+
+`static` 
 
 Wrap the given text string with a background color escape sequence and an automatic reset sequence, highlighting the text with the specified background color.
 
@@ -91,7 +99,9 @@ Wrap the given text string with a background color escape sequence and an automa
 
 **Returns**: `String` — The text wrapped with background color and reset escape sequences.
 
-#### `function style( self, String text, I32 fgRed, I32 fgGreen, I32 fgBlue, I32 bgRed, I32 bgGreen, I32 bgBlue ) -> String`
+#### `function style( String text, I32 fgRed, I32 fgGreen, I32 fgBlue, I32 bgRed, I32 bgGreen, I32 bgBlue ) -> String`
+
+`static` 
 
 Wrap the given text string with both a foreground and background color escape sequence, followed by an automatic reset. This applies both text color and highlight color simultaneously.
 
@@ -114,13 +124,17 @@ Wrap the given text string with both a foreground and background color escape se
 
 **Returns**: `String` — The text wrapped with both foreground and background color sequences.
 
-#### `function reset( self ) -> String`
+#### `function reset(  ) -> String`
+
+`static` 
 
 Return the ANSI reset escape sequence that restores the terminal to its default foreground and background colors and removes any text attributes.
 
 **Returns**: `String` — The reset escape sequence "\x1b[0m".
 
-#### `function foregroundHex( self, I32 hex ) -> String`
+#### `function foregroundHex( I32 hex ) -> String`
+
+`static` 
 
 Generate a foreground color escape sequence from a packed 24-bit hex value.
 
@@ -136,7 +150,9 @@ The ANSI foreground escape sequence for the given hex color.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function backgroundHex( self, I32 hex ) -> String`
+#### `function backgroundHex( I32 hex ) -> String`
+
+`static` 
 
 Generate a background color escape sequence from a packed 24-bit hex value.
 
@@ -152,7 +168,9 @@ The ANSI background escape sequence for the given hex color.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function colorizeHex( self, String text, I32 hex ) -> String`
+#### `function colorizeHex( String text, I32 hex ) -> String`
+
+`static` 
 
 Wrap text with a foreground color and reset using a packed 24-bit hex value.
 

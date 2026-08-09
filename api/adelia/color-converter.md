@@ -40,7 +40,9 @@ Static utility class providing pure functions for converting colors between diff
 
 ### Methods
 
-#### `function rgbToHex( self, I32 red, I32 green, I32 blue ) -> I32`
+#### `function rgbToHex( I32 red, I32 green, I32 blue ) -> I32`
+
+`static` 
 
 Pack three RGB channel values into a single 24-bit hexadecimal integer with red in the most significant byte, green in the middle byte, and blue in the least significant byte.
 
@@ -55,7 +57,9 @@ Pack three RGB channel values into a single 24-bit hexadecimal integer with red 
 
 **Returns**: `I32` — The packed 24-bit hex value such that 0xRRGGBB.
 
-#### `function hexToRgb( self, I32 hex ) -> RGB`
+#### `function hexToRgb( I32 hex ) -> RGB`
+
+`static` 
 
 Extract individual red, green, and blue channel values from a packed 24-bit hexadecimal color integer.
 
@@ -71,7 +75,9 @@ An RGB struct with the extracted channel values.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function rgbToHsl( self, I32 red, I32 green, I32 blue ) -> HSL`
+#### `function rgbToHsl( I32 red, I32 green, I32 blue ) -> HSL`
+
+`static` 
 
 Convert an RGB color to the HSL color space using the standard algorithm. The hue is computed from the dominant channel and expressed in degrees (0-360), saturation measures color purity relative to lightness, and lightness is the average of the maximum and minimum channel intensities.
 
@@ -91,7 +97,9 @@ The equivalent color in the HSL color space.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function hslToRgb( self, F64 hue, F64 saturation, F64 lightness ) -> RGB`
+#### `function hslToRgb( F64 hue, F64 saturation, F64 lightness ) -> RGB`
+
+`static` 
 
 Convert an HSL color back to the RGB color space. The algorithm computes chroma from saturation and lightness, determines which 60-degree hue sector the color falls in, and calculates the intermediate RGB values before scaling to the 0-255 integer range.
 
@@ -111,7 +119,9 @@ The equivalent color in the RGB color space with rounded integer channels.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function rgbToHsv( self, I32 red, I32 green, I32 blue ) -> HSV`
+#### `function rgbToHsv( I32 red, I32 green, I32 blue ) -> HSV`
+
+`static` 
 
 Convert an RGB color to the HSV color space. The hue is computed identically to HSL, but saturation is defined as chroma divided by the maximum channel value (not relative to lightness), and value is simply the maximum channel intensity.
 
@@ -131,7 +141,9 @@ The equivalent color in the HSV color space.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function hsvToRgb( self, F64 hue, F64 saturation, F64 value ) -> RGB`
+#### `function hsvToRgb( F64 hue, F64 saturation, F64 value ) -> RGB`
+
+`static` 
 
 Convert an HSV color back to the RGB color space. The algorithm computes chroma from value and saturation, determines the hue sector, and calculates the RGB channel values before scaling to the 0-255 integer range.
 
@@ -151,7 +163,9 @@ The equivalent color in the RGB color space with rounded integer channels.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function rgbToCmyk( self, I32 red, I32 green, I32 blue ) -> CMYK`
+#### `function rgbToCmyk( I32 red, I32 green, I32 blue ) -> CMYK`
+
+`static` 
 
 Convert an RGB color to the CMYK subtractive color space. The key (black) component is derived from the maximum RGB channel, and the remaining CMY values represent how much of each subtractive primary is needed after accounting for the black ink contribution.
 
@@ -171,7 +185,9 @@ The equivalent color in the CMYK color space.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function cmykToRgb( self, F64 cyan, F64 magenta, F64 yellow, F64 key ) -> RGB`
+#### `function cmykToRgb( F64 cyan, F64 magenta, F64 yellow, F64 key ) -> RGB`
+
+`static` 
 
 Convert a CMYK color back to the RGB color space. Each RGB channel is computed by applying both the color ink density and the black ink density to the maximum intensity of 255.
 
@@ -193,7 +209,9 @@ The equivalent color in the RGB color space with rounded integer channels.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function hexToHsl( self, I32 hex ) -> HSL`
+#### `function hexToHsl( I32 hex ) -> HSL`
+
+`static` 
 
 Convert a packed hexadecimal color to HSL by first extracting the RGB channels and then applying the RGB-to-HSL conversion.
 
@@ -204,7 +222,9 @@ Convert a packed hexadecimal color to HSL by first extracting the RGB channels a
 
 **Returns**: `HSL` — The equivalent color in the HSL color space.
 
-#### `function hslToHex( self, F64 hue, F64 saturation, F64 lightness ) -> I32`
+#### `function hslToHex( F64 hue, F64 saturation, F64 lightness ) -> I32`
+
+`static` 
 
 Convert an HSL color to a packed hexadecimal integer by first converting to RGB and then packing the channels.
 
@@ -219,7 +239,9 @@ Convert an HSL color to a packed hexadecimal integer by first converting to RGB 
 
 **Returns**: `I32` — The packed 24-bit hex color value.
 
-#### `function hexToHsv( self, I32 hex ) -> HSV`
+#### `function hexToHsv( I32 hex ) -> HSV`
+
+`static` 
 
 Convert a packed hexadecimal color to HSV by first extracting the RGB channels and then applying the RGB-to-HSV conversion.
 
@@ -230,7 +252,9 @@ Convert a packed hexadecimal color to HSV by first extracting the RGB channels a
 
 **Returns**: `HSV` — The equivalent color in the HSV color space.
 
-#### `function hsvToHex( self, F64 hue, F64 saturation, F64 value ) -> I32`
+#### `function hsvToHex( F64 hue, F64 saturation, F64 value ) -> I32`
+
+`static` 
 
 Convert an HSV color to a packed hexadecimal integer by first converting to RGB and then packing the channels.
 
@@ -245,7 +269,9 @@ Convert an HSV color to a packed hexadecimal integer by first converting to RGB 
 
 **Returns**: `I32` — The packed 24-bit hex color value.
 
-#### `function hexToCmyk( self, I32 hex ) -> CMYK`
+#### `function hexToCmyk( I32 hex ) -> CMYK`
+
+`static` 
 
 Convert a packed hexadecimal color to CMYK by first extracting the RGB channels and then applying the RGB-to-CMYK conversion.
 
@@ -256,7 +282,9 @@ Convert a packed hexadecimal color to CMYK by first extracting the RGB channels 
 
 **Returns**: `CMYK` — The equivalent color in the CMYK color space.
 
-#### `function cmykToHex( self, F64 cyan, F64 magenta, F64 yellow, F64 key ) -> I32`
+#### `function cmykToHex( F64 cyan, F64 magenta, F64 yellow, F64 key ) -> I32`
+
+`static` 
 
 Convert a CMYK color to a packed hexadecimal integer by first converting to RGB and then packing the channels.
 
@@ -273,7 +301,9 @@ Convert a CMYK color to a packed hexadecimal integer by first converting to RGB 
 
 **Returns**: `I32` — The packed 24-bit hex color value.
 
-#### `function minThree( self, F64 a, F64 b, F64 c ) -> F64`
+#### `function minThree( F64 a, F64 b, F64 c ) -> F64`
+
+`static` 
 
 Return the minimum of three floating-point values.
 
@@ -293,7 +323,9 @@ The smallest of the three values.
 - Time: `O(1)`
 - Space: `O(1)`
 
-#### `function maxThree( self, F64 a, F64 b, F64 c ) -> F64`
+#### `function maxThree( F64 a, F64 b, F64 c ) -> F64`
+
+`static` 
 
 Return the maximum of three floating-point values.
 

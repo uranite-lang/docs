@@ -17,7 +17,7 @@
 
 - `uranite.errors.throwable`
   - `Throwable`
-- `uranite.errors.traceback`
+- `uranite.errors.traceback.traceback`
   - `Traceback`
 
 ## class `Exception`

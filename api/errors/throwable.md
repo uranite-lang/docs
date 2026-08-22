@@ -2,20 +2,13 @@
 
 ## Table of Contents
 
-- [Imports](#imports)
 - [interface `Throwable`](#interface-throwable)
   - [`getCode()`](#getCode)
   - [`getFile()`](#getFile)
   - [`getLine()`](#getLine)
   - [`getMessage()`](#getMessage)
   - [`getPrevious()`](#getPrevious)
-  - [`getTraceback()`](#getTraceback)
   - [`toString()`](#toString)
-
-## Imports
-
-- `uranite.errors.traceback`
-  - `Traceback`
 
 ## interface `Throwable`
 
@@ -54,12 +47,6 @@ Return the human-readable error message describing the problem.
 Return the chained cause of this throwable, or None if this is the root cause.
 
 **Returns**: `?Throwable` — The previous throwable that caused this one, or None.
-
-#### `function getTraceback( self ) -> ?Traceback`
-
-Return the traceback information for this throwable, or None if not available.
-
-**Returns**: `?Traceback` — The traceback record containing source location info, or None.
 
 #### `function toString( self ) -> String`
 

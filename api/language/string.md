@@ -2,7 +2,6 @@
 
 ## Table of Contents
 
-- [Imports](#imports)
 - [class `String`](#class-string)
   - [`String()`](#String)
   - [`getValue()`](#getValue)
@@ -21,17 +20,6 @@
   - [`split()`](#split)
   - [`hash()`](#hash)
   - [`format()`](#format)
-
-## Imports
-
-- `uranite.memory.allocator`
-  - `alloc`
-- `uranite.io.syscall`
-  - `ptrToString`
-  - `readByteAt`
-  - `stringLen`
-  - `stringToPtr`
-  - `writeByteAt`
 
 ## class `String`
 

@@ -10,6 +10,8 @@
   - `Error`
 - `uranite.errors.exception`
   - `Exception`
+- `uranite.errors.interrupt`
+  - `KeyboardInterruptError`
 - `uranite.errors.lookup`
   - `IndexError`
   - `KeyError`
@@ -24,7 +26,7 @@
   - `StateError`
 - `uranite.errors.throwable`
   - `Throwable`
-- `uranite.errors.traceback`
+- `uranite.errors.traceback.traceback`
   - `Traceback`
 - `uranite.errors.type`
   - `TypeError`

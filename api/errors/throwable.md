@@ -2,7 +2,9 @@
 
 ## Table of Contents
 
+- [Imports](#imports)
 - [interface `Throwable`](#interface-throwable)
+  - [`drop()`](#drop)
   - [`getCode()`](#getCode)
   - [`getFile()`](#getFile)
   - [`getLine()`](#getLine)
@@ -10,13 +12,24 @@
   - [`getPrevious()`](#getPrevious)
   - [`toString()`](#toString)
 
+## Imports
+
+- `uranite.memory.droper`
+  - `Droper`
+
 ## interface `Throwable`
+
+**Implements**: `Droper`
 
 Root interface for all error and exception types in Uranite.
 
-Any type that can be used with the raise statement must implement this interface. It defines the common contract for accessing error metadata including the error code, source location, message, and optional chained cause.
+Any type that can be used with the raise statement must implement this interface. It defines the common contract for accessing error metadata including the error code, source location, message, and optional chained cause. Implementing types also inherit the Droper contract so that heap resources captured alongside a raised throwable are released when the owning reference leaves scope.
 
 ### Methods
+
+#### `function drop( self ) -> Void`
+
+Release all heap resources captured alongside this throwable, such as the traceback recorded at raise time. Called automatically when the owning reference leaves scope; calling it manually more than once releases shared resources twice.
 
 #### `function getCode( self ) -> I64`
 

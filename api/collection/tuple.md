@@ -15,6 +15,7 @@
   - [`hashCode()`](#hashCode)
   - [`toString()`](#toString)
   - [`iterator()`](#iterator)
+  - [`destroy()`](#destroy)
 - [class `TupleIterator`](#class-tupleiterator)
   - [`TupleIterator()`](#TupleIterator)
   - [`has()`](#has)
@@ -181,6 +182,14 @@ A new iterator starting at the first element.
 
 **Complexity**:
 - Time: `O(1)`
+
+#### `function destroy( self ) -> Void`
+
+Release the heap-allocated element buffer held by this tuple. Must be called exactly once after the tuple is no longer needed.
+
+**Complexity**:
+- Time: `O(1)`
+- Space: `O(1)`
 
 ## class `TupleIterator`<E>
 

@@ -7,7 +7,7 @@
 ## Imports
 
 - `uranite.ffi.errors`
-  - `FfiError`
+  - `FFIError`
   - `LibraryLoadError`
   - `SymbolNotFoundError`
 - `uranite.ffi.library`
@@ -18,7 +18,7 @@
 ## Exported Symbols
 
 - `DynamicLibrary`
-- `FfiError`
+- `FFIError`
 - `ForeignSymbol`
 - `LibraryLoadError`
 - `SymbolNotFoundError`

@@ -11,10 +11,13 @@
   - [`getMessage()`](#getMessage)
   - [`getPrevious()`](#getPrevious)
   - [`getTraceback()`](#getTraceback)
+  - [`drop()`](#drop)
   - [`toString()`](#toString)
 
 ## Imports
 
+- `uranite.errors.runtime`
+  - `__uranite_release_traceback_of`
 - `uranite.errors.throwable`
   - `Throwable`
 - `uranite.errors.traceback.traceback`
@@ -69,6 +72,14 @@ Create a new error with a message, error code, and optional chained cause.
 #### `function getPrevious( self ) -> ?Throwable`
 
 #### `function getTraceback( self ) -> ?Traceback`
+
+#### `function drop( self ) -> Void`
+
+Release the heap-allocated traceback captured when this error was raised, freeing the frame buffer, every captured frame record, and the traceback container. Called automatically when the owning reference leaves scope; calling it manually more than once releases shared memory twice.
+
+**Complexity**:
+- Time: `O(f) where f is the number of captured stack frames.`
+- Space: `O(1)`
 
 #### `function toString( self ) -> String`
 

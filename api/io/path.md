@@ -39,15 +39,21 @@
 - `uranite.io.syscall`
   - `F_OK`
   - `memoryToPtr`
+  - `raiseFromErrno`
   - `readByteAt`
   - `stringLen`
   - `stringToPtr`
   - `sysAccess`
-  - `sysGetcwd`
-  - `sysReadlink`
   - `writeByteAt`
 - `uranite.memory.memory`
   - `Memory`
+- `uranite.os.arch.native.syscall`
+  - `SYS_GETCWD`
+  - `scReadlink`
+- `uranite.os.syscall.invoke`
+  - `syscall2`
+- `uranite.os.syscall.result`
+  - `SyscallResult`
 
 ## function `join`
 

@@ -3,8 +3,8 @@
 ## Table of Contents
 
 - [Imports](#imports)
-- [class `FfiError`](#class-ffierror)
-  - [`FfiError()`](#FfiError)
+- [class `FFIError`](#class-ffierror)
+  - [`FFIError()`](#FFIError)
 - [class `LibraryLoadError`](#class-libraryloaderror)
   - [`LibraryLoadError()`](#LibraryLoadError)
 - [class `SymbolNotFoundError`](#class-symbolnotfounderror)
@@ -15,7 +15,7 @@
 - `uranite.errors.error`
   - `Error`
 
-## class `FfiError`
+## class `FFIError`
 
 **Extends**: `Error`
 
@@ -36,7 +36,7 @@ Construct an FFI error with a descriptive message.
 
 ### Methods
 
-#### `function FfiError( self, String message, I64 code, ?Error cause ) -> Void`
+#### `function FFIError( self, String message, I64 code, ?Error cause ) -> Void`
 
 Construct an FFI error with a descriptive message.
 
@@ -55,7 +55,7 @@ Construct an FFI error with a descriptive message.
 
 ## class `LibraryLoadError`
 
-**Extends**: `FfiError` → `Error`
+**Extends**: `FFIError` → `Error`
 
 Raised when a dynamic library cannot be loaded.
 
@@ -90,7 +90,7 @@ Construct a LibraryLoadError from the library path and system error message.
 
 ## class `SymbolNotFoundError`
 
-**Extends**: `FfiError` → `Error`
+**Extends**: `FFIError` → `Error`
 
 Raised when a named symbol cannot be resolved within a loaded dynamic library.
 

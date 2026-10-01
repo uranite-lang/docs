@@ -75,7 +75,7 @@ Load the shared library into the process address space using RTLD_NOW (immediate
 
 **Raises**:
 
-- `LibraryLoadError` → `FfiError` → `Error` — When the dynamic linker cannot load the library.
+- `LibraryLoadError` → `FFIError` → `Error` — When the dynamic linker cannot load the library.
 
 **Complexity**:
 - Time: `O(n) where n is the number of symbols in the library`
@@ -102,7 +102,7 @@ Resolve a named symbol within the loaded library. Returns the raw address as I64
 
 **Raises**:
 
-- `SymbolNotFoundError` → `FfiError` → `Error` — When the symbol does not exist in the library.
+- `SymbolNotFoundError` → `FFIError` → `Error` — When the symbol does not exist in the library.
 
 **Complexity**:
 - Time: `O(1) amortized (hash table lookup in dynamic linker)`

@@ -115,6 +115,7 @@
   - `TCSETS`
   - `TIOCGWINSZ`
   - `memoryToPtr`
+  - `raiseFromErrno`
   - `readByteAt`
   - `readI32At`
   - `readI64At`
@@ -135,7 +136,6 @@
   - `sysOpen`
   - `sysPipe2`
   - `sysRead`
-  - `sysReadlink`
   - `sysRename`
   - `sysStatfs`
   - `sysSymlink`
@@ -145,6 +145,8 @@
   - `writeI32At`
 - `uranite.memory.memory`
   - `Memory`
+- `uranite.os.arch.native.syscall`
+  - `scReadlink`
 - `uranite.os.syscall.invoke`
   - `syscall0`
   - `syscall2`

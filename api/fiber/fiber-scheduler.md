@@ -32,8 +32,7 @@
   - `FiberError`
   - `fiberSuspend`
   - `fiberTrampoline`
-  - `gCallerRspPtr`
-  - `gCurrentFiberPtr`
+  - `FiberState`
 - `uranite.io.syscall`
   - `memoryToPtr`
   - `readI64At`

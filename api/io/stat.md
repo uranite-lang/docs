@@ -48,6 +48,9 @@
   - `sysFstat`
   - `sysLstat`
   - `sysStat`
+- `uranite.os.arch.native.stat`
+  - `STAT_ARCH`
+  - `STAT_SIZE`
 - `uranite.memory.memory`
   - `Memory`
 

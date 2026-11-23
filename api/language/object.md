@@ -13,6 +13,8 @@ Root base class for all Uranite classes. Every class without an explicit base cl
 
 #### `function toString( self ) -> String`
 
+`virtual` 
+
 Return a string representation of this object. Subclasses should override this method to provide a meaningful description.
 
 **Returns**: `String` — A String describing this object.

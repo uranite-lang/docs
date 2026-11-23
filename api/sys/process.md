@@ -3,19 +3,6 @@
 ## Table of Contents
 
 - [Imports](#imports)
-- [const `SYS_EXIT_GROUP`](#const-sys-exit-group)
-- [const `SYS_GETPID`](#const-sys-getpid)
-- [const `SYS_GETPPID`](#const-sys-getppid)
-- [const `SYS_GETUID`](#const-sys-getuid)
-- [const `SYS_GETGID`](#const-sys-getgid)
-- [const `SYS_GETEUID`](#const-sys-geteuid)
-- [const `SYS_GETEGID`](#const-sys-getegid)
-- [const `SYS_FORK`](#const-sys-fork)
-- [const `SYS_KILL`](#const-sys-kill)
-- [const `SYS_NANOSLEEP`](#const-sys-nanosleep)
-- [const `SYS_WAIT4`](#const-sys-wait4)
-- [const `SYS_GETPGID`](#const-sys-getpgid)
-- [const `SYS_SETSID`](#const-sys-setsid)
 - [const `SIGTERM`](#const-sigterm)
 - [const `SIGKILL`](#const-sigkill)
 - [const `SIGINT`](#const-sigint)
@@ -75,34 +62,23 @@
   - `syscall2`
   - `syscall3`
   - `syscall4`
+- `uranite.os.arch.native.syscall`
+  - `scFork`
+  - `SYS_EXIT_GROUP`
+  - `SYS_GETPID`
+  - `SYS_GETPPID`
+  - `SYS_GETUID`
+  - `SYS_GETGID`
+  - `SYS_GETEUID`
+  - `SYS_GETEGID`
+  - `SYS_FORK`
+  - `SYS_KILL`
+  - `SYS_NANOSLEEP`
+  - `SYS_WAIT4`
+  - `SYS_GETPGID`
+  - `SYS_SETSID`
 - `uranite.os.syscall.result`
   - `SyscallResult`
-
-## const `SYS_EXIT_GROUP`
-
-## const `SYS_GETPID`
-
-## const `SYS_GETPPID`
-
-## const `SYS_GETUID`
-
-## const `SYS_GETGID`
-
-## const `SYS_GETEUID`
-
-## const `SYS_GETEGID`
-
-## const `SYS_FORK`
-
-## const `SYS_KILL`
-
-## const `SYS_NANOSLEEP`
-
-## const `SYS_WAIT4`
-
-## const `SYS_GETPGID`
-
-## const `SYS_SETSID`
 
 ## const `SIGTERM`
 

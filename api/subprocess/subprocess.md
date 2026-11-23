@@ -3,11 +3,6 @@
 ## Table of Contents
 
 - [Imports](#imports)
-- [const `SYS_FORK`](#const-sys-fork)
-- [const `SYS_EXECVE`](#const-sys-execve)
-- [const `SYS_WAIT4`](#const-sys-wait4)
-- [const `SYS_EXIT_GROUP`](#const-sys-exit-group)
-- [const `SYS_DUP2`](#const-sys-dup2)
 - [class `SubprocessError`](#class-subprocesserror)
   - [`SubprocessError()`](#SubprocessError)
 - [class `SubprocessResult`](#class-subprocessresult)
@@ -56,28 +51,14 @@
   - `syscall2`
   - `syscall3`
   - `syscall4`
+- `uranite.os.arch.native.syscall`
+  - `scFork`
+  - `SYS_EXECVE`
+  - `SYS_EXIT_GROUP`
+  - `SYS_FORK`
+  - `SYS_WAIT4`
 - `uranite.os.syscall.result`
   - `SyscallResult`
-
-## const `SYS_FORK`
-
-Linux syscall number for fork. 
-
-## const `SYS_EXECVE`
-
-Linux syscall number for execve. 
-
-## const `SYS_WAIT4`
-
-Linux syscall number for wait4. 
-
-## const `SYS_EXIT_GROUP`
-
-Linux syscall number for exit_group. 
-
-## const `SYS_DUP2`
-
-Linux syscall number for dup2. 
 
 ## class `SubprocessError`
 

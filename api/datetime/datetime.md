@@ -3,7 +3,6 @@
 ## Table of Contents
 
 - [Imports](#imports)
-- [const `SYS_CLOCK_GETTIME`](#const-sys-clock-gettime)
 - [const `CLOCK_REALTIME`](#const-clock-realtime)
 - [const `CLOCK_MONOTONIC`](#const-clock-monotonic)
 - [const `EPOCH_YEAR`](#const-epoch-year)
@@ -70,6 +69,8 @@
   - `alloc`
 - `uranite.memory.memory`
   - `Memory`
+- `uranite.os.arch.native.syscall`
+  - `SYS_CLOCK_GETTIME`
 - `uranite.os.syscall.invoke`
   - `syscall2`
 - `uranite.os.syscall.result`
@@ -77,10 +78,6 @@
 - `uranite.string.format`
   - `appendTo`
   - `padZero`
-
-## const `SYS_CLOCK_GETTIME`
-
-Linux syscall number for clock_gettime. 
 
 ## const `CLOCK_REALTIME`
 

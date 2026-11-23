@@ -5,8 +5,6 @@
 - [Imports](#imports)
 - [class `FiberError`](#class-fibererror)
   - [`FiberError()`](#FiberError)
-- [const `SYS_MMAP`](#const-sys-mmap)
-- [const `SYS_MUNMAP`](#const-sys-munmap)
 - [const `PROT_RW`](#const-prot-rw)
 - [const `MAP_PRIVATE_ANON`](#const-map-private-anon)
 - [const `DEFAULT_FIBER_STACK`](#const-default-fiber-stack)
@@ -26,8 +24,7 @@
 - [const `F_HAS_RETURN`](#const-f-has-return)
 - [const `F_ERROR`](#const-f-error)
 - [const `FIBER_FIELD_COUNT`](#const-fiber-field-count)
-- [const `gCurrentFiberPtr`](#const-gcurrentfiberptr)
-- [const `gCallerRspPtr`](#const-gcallerrspptr)
+- [class `FiberState`](#class-fiberstate)
 - [function `fiberTrampoline`](#function-fibertrampoline)
   - [`fiberTrampoline()`](#fiberTrampoline)
 - [function `fiberSuspend`](#function-fibersuspend)
@@ -57,6 +54,9 @@
   - `writeI64At`
 - `uranite.memory.memory`
   - `Memory`
+- `uranite.os.arch.native.syscall`
+  - `SYS_MMAP`
+  - `SYS_MUNMAP`
 - `uranite.os.syscall.invoke`
   - `syscall2`
   - `syscall6`
@@ -83,14 +83,6 @@ Create a new fiber error with the given message.
 **Complexity**:
 - Time: `O(n)`
 - Space: `O(1)`
-
-## const `SYS_MMAP`
-
-Linux syscall number for mmap.
-
-## const `SYS_MUNMAP`
-
-Linux syscall number for munmap.
 
 ## const `PROT_RW`
 
@@ -168,13 +160,16 @@ Field offset index for the fiber's error state.
 
 Total number of fields in the fiber data array.
 
-## const `gCurrentFiberPtr`
+## class `FiberState`
 
 Global pointer to the currently executing fiber's data array. Set before each context switch into a fiber and read by fiberTrampoline and fiberSuspend.
 
-## const `gCallerRspPtr`
+### Fields
 
-Global pointer to the caller's saved RSP buffer. Used to return control from the fiber back to the caller (scheduler or direct invoker).
+| Name | Type | Access |
+|------|------|--------|
+| `gCurrentFiberPtr` | `I64` | public |
+| `gCallerRspPtr` | `I64` | public |
 
 ## function `fiberTrampoline`
 

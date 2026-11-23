@@ -3,8 +3,6 @@
 ## Table of Contents
 
 - [Imports](#imports)
-- [const `SYS_MMAP`](#const-sys-mmap)
-- [const `SYS_MUNMAP`](#const-sys-munmap)
 - [const `PROT_RW`](#const-prot-rw)
 - [const `MAP_PRIVATE_ANON`](#const-map-private-anon)
 - [const `DEFAULT_STACK_SIZE`](#const-default-stack-size)
@@ -54,19 +52,14 @@
   - `writeI64At`
 - `uranite.memory.memory`
   - `Memory`
+- `uranite.os.arch.native.syscall`
+  - `SYS_MMAP`
+  - `SYS_MUNMAP`
 - `uranite.os.syscall.invoke`
   - `syscall2`
   - `syscall6`
 - `uranite.os.syscall.result`
   - `SyscallResult`
-
-## const `SYS_MMAP`
-
-Syscall number for mmap on x86-64 Linux. 
-
-## const `SYS_MUNMAP`
-
-Syscall number for munmap on x86-64 Linux. 
 
 ## const `PROT_RW`
 

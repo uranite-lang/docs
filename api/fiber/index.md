@@ -28,8 +28,7 @@
   - `FiberError`
   - `fiberSuspend`
   - `fiberTrampoline`
-  - `gCallerRspPtr`
-  - `gCurrentFiberPtr`
+  - `FiberState`
 - `uranite.fiber.fiber-scheduler`
   - `FiberScheduler`
   - `MAX_FIBERS`
@@ -59,6 +58,5 @@
 - `MAX_FIBERS`
 - `fiberSuspend`
 - `fiberTrampoline`
-- `gCallerRspPtr`
-- `gCurrentFiberPtr`
+- `FiberState`
 

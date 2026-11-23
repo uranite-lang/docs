@@ -3,8 +3,6 @@
 ## Table of Contents
 
 - [Imports](#imports)
-- [const `SYS_TIMERFD_CREATE`](#const-sys-timerfd-create)
-- [const `SYS_TIMERFD_SETTIME`](#const-sys-timerfd-settime)
 - [const `CLOCK_MONOTONIC`](#const-clock-monotonic)
 - [const `TFD_CLOEXEC`](#const-tfd-cloexec)
 - [function `timerfdCreate`](#function-timerfdcreate)
@@ -25,19 +23,14 @@
   - `writeI64At`
 - `uranite.memory.memory`
   - `Memory`
+- `uranite.os.arch.native.syscall`
+  - `SYS_TIMERFD_CREATE`
+  - `SYS_TIMERFD_SETTIME`
 - `uranite.os.syscall.invoke`
   - `syscall2`
   - `syscall4`
 - `uranite.os.syscall.result`
   - `SyscallResult`
-
-## const `SYS_TIMERFD_CREATE`
-
-Syscall number for timerfd_create on x86-64 Linux. 
-
-## const `SYS_TIMERFD_SETTIME`
-
-Syscall number for timerfd_settime on x86-64 Linux. 
 
 ## const `CLOCK_MONOTONIC`
 

@@ -3,7 +3,6 @@
 ## Table of Contents
 
 - [Imports](#imports)
-- [const `SYS_GETPID`](#const-sys-getpid)
 - [function `copy`](#function-copy)
   - [`copy()`](#copy)
 - [function `moveFile`](#function-movefile)
@@ -147,6 +146,7 @@
   - `Memory`
 - `uranite.os.arch.native.syscall`
   - `scReadlink`
+  - `SYS_GETPID`
 - `uranite.os.syscall.invoke`
   - `syscall0`
   - `syscall2`
@@ -177,8 +177,6 @@
   - `VNode`
   - `VNodeCache`
   - `VNodeType`
-
-## const `SYS_GETPID`
 
 ## function `copy`
 

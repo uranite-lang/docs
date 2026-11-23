@@ -3,9 +3,6 @@
 ## Table of Contents
 
 - [Imports](#imports)
-- [const `SYS_EPOLL_CREATE1`](#const-sys-epoll-create1)
-- [const `SYS_EPOLL_CTL`](#const-sys-epoll-ctl)
-- [const `SYS_EPOLL_WAIT`](#const-sys-epoll-wait)
 - [const `EPOLL_CTL_ADD`](#const-epoll-ctl-add)
 - [const `EPOLL_CTL_DEL`](#const-epoll-ctl-del)
 - [const `EPOLL_CTL_MOD`](#const-epoll-ctl-mod)
@@ -47,24 +44,19 @@
   - `writeI64At`
 - `uranite.memory.memory`
   - `Memory`
+- `uranite.os.arch.native.syscall`
+  - `scEpollCreate1`
+  - `scEpollCtl`
+  - `scEpollWait`
+  - `SYS_EPOLL_CREATE1`
+  - `SYS_EPOLL_CTL`
+  - `SYS_EPOLL_WAIT`
 - `uranite.os.syscall.invoke`
   - `syscall1`
   - `syscall2`
   - `syscall4`
 - `uranite.os.syscall.result`
   - `SyscallResult`
-
-## const `SYS_EPOLL_CREATE1`
-
-Syscall number for epoll_create1 on x86-64 Linux. 
-
-## const `SYS_EPOLL_CTL`
-
-Syscall number for epoll_ctl on x86-64 Linux. 
-
-## const `SYS_EPOLL_WAIT`
-
-Syscall number for epoll_wait on x86-64 Linux. 
 
 ## const `EPOLL_CTL_ADD`
 

@@ -4,9 +4,7 @@
 
 - [Imports](#imports)
 - [const `BASE64_PAD`](#const-base64-pad)
-- [const `encodeTableAddress`](#const-encodetableaddress)
-- [const `decodeTableAddress`](#const-decodetableaddress)
-- [const `tablesInitialized`](#const-tablesinitialized)
+- [class `Base64State`](#class-base64state)
 - [class `Base64Error`](#class-base64error)
   - [`Base64Error()`](#Base64Error)
 - [function `initializeBase64Tables`](#function-initializebase64tables)
@@ -45,17 +43,17 @@
 
 ASCII code for '=' padding character.
 
-## const `encodeTableAddress`
+## class `Base64State`
 
 Lazily initialized 64-byte encode lookup table (index -> ASCII char).
 
-## const `decodeTableAddress`
+### Fields
 
-Lazily initialized 256-byte decode lookup table (ASCII char -> 6-bit value).
-
-## const `tablesInitialized`
-
-Flag indicating whether encode/decode tables have been computed.
+| Name | Type | Access |
+|------|------|--------|
+| `encodeTableAddress` | `I64` | public |
+| `decodeTableAddress` | `I64` | public |
+| `tablesInitialized` | `I64` | public |
 
 ## class `Base64Error`
 

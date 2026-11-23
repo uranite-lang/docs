@@ -7,8 +7,7 @@
 - [const `CRC32_INITIAL`](#const-crc32-initial)
 - [const `CRC32_TABLE_ENTRIES`](#const-crc32-table-entries)
 - [const `CRC32_TABLE_BYTE_SIZE`](#const-crc32-table-byte-size)
-- [const `tableAddress`](#const-tableaddress)
-- [const `tableInitialized`](#const-tableinitialized)
+- [class `Crc32State`](#class-crc32state)
 - [function `initializeCrc32Table`](#function-initializecrc32table)
   - [`initializeCrc32Table()`](#initializeCrc32Table)
 - [function `crc32Update`](#function-crc32update)
@@ -47,13 +46,16 @@ Number of entries in the CRC lookup table.
 
 Byte size of the lookup table (256 entries * 8 bytes each).
 
-## const `tableAddress`
+## class `Crc32State`
 
 Lazily initialized address of the 256-entry CRC-32 lookup table.
 
-## const `tableInitialized`
+### Fields
 
-Flag indicating whether the lookup table has been computed.
+| Name | Type | Access |
+|------|------|--------|
+| `tableAddress` | `I64` | public |
+| `tableInitialized` | `I64` | public |
 
 ## function `initializeCrc32Table`
 

@@ -2,14 +2,7 @@
 
 ## Table of Contents
 
-- [Imports](#imports)
+- [class `Uranite`](#class-uranite)
 
-## Imports
-
-- `uranite.adelia`
-  - `Adelia`
-
-## Exported Symbols
-
-- `Adelia`
+## class `Uranite`
 

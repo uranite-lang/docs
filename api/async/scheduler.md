@@ -5,7 +5,6 @@
 - [Imports](#imports)
 - [const `MAX_TASKS`](#const-max-tasks)
 - [const `MAX_EPOLL_EVENTS`](#const-max-epoll-events)
-- [const `SYS_MUNMAP`](#const-sys-munmap)
 - [class `NativeScheduler`](#class-nativescheduler)
   - [`NativeScheduler()`](#NativeScheduler)
   - [`init()`](#init)
@@ -76,6 +75,8 @@
   - `writeI64At`
 - `uranite.memory.memory`
   - `Memory`
+- `uranite.os.arch.native.syscall`
+  - `SYS_MUNMAP`
 - `uranite.os.syscall.invoke`
   - `syscall2`
 - `uranite.os.syscall.result`
@@ -88,10 +89,6 @@ Maximum number of concurrent tasks the scheduler can manage.
 ## const `MAX_EPOLL_EVENTS`
 
 Maximum number of epoll events processed per poll cycle. 
-
-## const `SYS_MUNMAP`
-
-Syscall number for munmap on x86-64 Linux. 
 
 ## class `NativeScheduler`
 

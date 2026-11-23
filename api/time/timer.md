@@ -18,7 +18,6 @@
   - [`getUptimeMicros()`](#getUptimeMicros)
   - [`getCurrentTick()`](#getCurrentTick)
   - [`destroy()`](#destroy)
-- [const `SYS_NANOSLEEP`](#const-sys-nanosleep)
 - [function `sleep`](#function-sleep)
   - [`sleep()`](#sleep)
 - [function `sleepSeconds`](#function-sleepseconds)
@@ -31,6 +30,8 @@
   - `writeI64At`
 - `uranite.memory.memory`
   - `Memory`
+- `uranite.os.arch.native.syscall`
+  - `SYS_NANOSLEEP`
 - `uranite.os.syscall.invoke`
   - `syscall2`
 - `uranite.os.syscall.result`
@@ -165,8 +166,6 @@ Return raw tick count since timer construction.
 #### `function destroy( self ) -> Void`
 
 Release all resources held by the timer wheel. 
-
-## const `SYS_NANOSLEEP`
 
 ## function `sleep`
 

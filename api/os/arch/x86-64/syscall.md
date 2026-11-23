@@ -35,6 +35,45 @@
 - [const `SYS_FLOCK`](#const-sys-flock)
 - [const `SYS_IOCTL`](#const-sys-ioctl)
 - [const `SYS_PIPE2`](#const-sys-pipe2)
+- [const `SYS_CLOCK_GETTIME`](#const-sys-clock-gettime)
+- [const `SYS_SOCKET`](#const-sys-socket)
+- [const `SYS_CONNECT`](#const-sys-connect)
+- [const `SYS_ACCEPT`](#const-sys-accept)
+- [const `SYS_ACCEPT4`](#const-sys-accept4)
+- [const `SYS_SENDTO`](#const-sys-sendto)
+- [const `SYS_RECVFROM`](#const-sys-recvfrom)
+- [const `SYS_SENDMSG`](#const-sys-sendmsg)
+- [const `SYS_RECVMSG`](#const-sys-recvmsg)
+- [const `SYS_BIND`](#const-sys-bind)
+- [const `SYS_LISTEN`](#const-sys-listen)
+- [const `SYS_SETSOCKOPT`](#const-sys-setsockopt)
+- [const `SYS_GETSOCKOPT`](#const-sys-getsockopt)
+- [const `SYS_GETSOCKNAME`](#const-sys-getsockname)
+- [const `SYS_GETPEERNAME`](#const-sys-getpeername)
+- [const `SYS_SHUTDOWN`](#const-sys-shutdown)
+- [const `SYS_SOCKETPAIR`](#const-sys-socketpair)
+- [const `SYS_NANOSLEEP`](#const-sys-nanosleep)
+- [const `SYS_GETPID`](#const-sys-getpid)
+- [const `SYS_GETPPID`](#const-sys-getppid)
+- [const `SYS_GETUID`](#const-sys-getuid)
+- [const `SYS_GETGID`](#const-sys-getgid)
+- [const `SYS_GETEUID`](#const-sys-geteuid)
+- [const `SYS_GETEGID`](#const-sys-getegid)
+- [const `SYS_FORK`](#const-sys-fork)
+- [const `SYS_KILL`](#const-sys-kill)
+- [const `SYS_WAIT4`](#const-sys-wait4)
+- [const `SYS_GETPGID`](#const-sys-getpgid)
+- [const `SYS_SETSID`](#const-sys-setsid)
+- [const `SYS_EXECVE`](#const-sys-execve)
+- [const `SYS_EXIT_GROUP`](#const-sys-exit-group)
+- [const `SYS_DUP2`](#const-sys-dup2)
+- [const `SYS_RT_SIGACTION`](#const-sys-rt-sigaction)
+- [const `SYS_TIMERFD_CREATE`](#const-sys-timerfd-create)
+- [const `SYS_TIMERFD_SETTIME`](#const-sys-timerfd-settime)
+- [const `SYS_EPOLL_CREATE1`](#const-sys-epoll-create1)
+- [const `SYS_EPOLL_CTL`](#const-sys-epoll-ctl)
+- [const `SYS_EPOLL_WAIT`](#const-sys-epoll-wait)
+- [const `SYS_EPOLL_PWAIT`](#const-sys-epoll-pwait)
 - [const `SYS_OPEN`](#const-sys-open)
 - [const `SYS_STAT`](#const-sys-stat)
 - [const `SYS_LSTAT`](#const-sys-lstat)
@@ -74,6 +113,16 @@
   - [`scChmod()`](#scChmod)
 - [function `scChown`](#function-scchown)
   - [`scChown()`](#scChown)
+- [function `scFork`](#function-scfork)
+  - [`scFork()`](#scFork)
+- [function `scDup2`](#function-scdup2)
+  - [`scDup2()`](#scDup2)
+- [function `scEpollCreate1`](#function-scepollcreate1)
+  - [`scEpollCreate1()`](#scEpollCreate1)
+- [function `scEpollCtl`](#function-scepollctl)
+  - [`scEpollCtl()`](#scEpollCtl)
+- [function `scEpollWait`](#function-scepollwait)
+  - [`scEpollWait()`](#scEpollWait)
 
 ## Imports
 
@@ -157,6 +206,84 @@
 ## const `SYS_IOCTL`
 
 ## const `SYS_PIPE2`
+
+## const `SYS_CLOCK_GETTIME`
+
+## const `SYS_SOCKET`
+
+## const `SYS_CONNECT`
+
+## const `SYS_ACCEPT`
+
+## const `SYS_ACCEPT4`
+
+## const `SYS_SENDTO`
+
+## const `SYS_RECVFROM`
+
+## const `SYS_SENDMSG`
+
+## const `SYS_RECVMSG`
+
+## const `SYS_BIND`
+
+## const `SYS_LISTEN`
+
+## const `SYS_SETSOCKOPT`
+
+## const `SYS_GETSOCKOPT`
+
+## const `SYS_GETSOCKNAME`
+
+## const `SYS_GETPEERNAME`
+
+## const `SYS_SHUTDOWN`
+
+## const `SYS_SOCKETPAIR`
+
+## const `SYS_NANOSLEEP`
+
+## const `SYS_GETPID`
+
+## const `SYS_GETPPID`
+
+## const `SYS_GETUID`
+
+## const `SYS_GETGID`
+
+## const `SYS_GETEUID`
+
+## const `SYS_GETEGID`
+
+## const `SYS_FORK`
+
+## const `SYS_KILL`
+
+## const `SYS_WAIT4`
+
+## const `SYS_GETPGID`
+
+## const `SYS_SETSID`
+
+## const `SYS_EXECVE`
+
+## const `SYS_EXIT_GROUP`
+
+## const `SYS_DUP2`
+
+## const `SYS_RT_SIGACTION`
+
+## const `SYS_TIMERFD_CREATE`
+
+## const `SYS_TIMERFD_SETTIME`
+
+## const `SYS_EPOLL_CREATE1`
+
+## const `SYS_EPOLL_CTL`
+
+## const `SYS_EPOLL_WAIT`
+
+## const `SYS_EPOLL_PWAIT`
 
 ## const `SYS_OPEN`
 
@@ -261,4 +388,34 @@
 ### Methods
 
 #### `function scChown( I64 pathPtr, I64 uid, I64 gid ) -> SyscallResult`
+
+## function `scFork`
+
+### Methods
+
+#### `function scFork(  ) -> SyscallResult`
+
+## function `scDup2`
+
+### Methods
+
+#### `function scDup2( I64 oldFd, I64 newFd ) -> SyscallResult`
+
+## function `scEpollCreate1`
+
+### Methods
+
+#### `function scEpollCreate1(  ) -> SyscallResult`
+
+## function `scEpollCtl`
+
+### Methods
+
+#### `function scEpollCtl( I64 epfd, I64 operation, I64 fd, I64 eventPtr ) -> SyscallResult`
+
+## function `scEpollWait`
+
+### Methods
+
+#### `function scEpollWait( I64 epfd, I64 eventsPtr, I64 maxEvents, I64 timeoutMs ) -> SyscallResult`
 

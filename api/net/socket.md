@@ -3,17 +3,6 @@
 ## Table of Contents
 
 - [Imports](#imports)
-- [const `SYS_SOCKET`](#const-sys-socket)
-- [const `SYS_CONNECT`](#const-sys-connect)
-- [const `SYS_ACCEPT`](#const-sys-accept)
-- [const `SYS_SENDTO`](#const-sys-sendto)
-- [const `SYS_RECVFROM`](#const-sys-recvfrom)
-- [const `SYS_BIND`](#const-sys-bind)
-- [const `SYS_LISTEN`](#const-sys-listen)
-- [const `SYS_SETSOCKOPT`](#const-sys-setsockopt)
-- [const `SYS_GETSOCKNAME`](#const-sys-getsockname)
-- [const `SYS_GETPEERNAME`](#const-sys-getpeername)
-- [const `SYS_SHUTDOWN`](#const-sys-shutdown)
 - [const `AF_INET`](#const-af-inet)
 - [const `AF_INET6`](#const-af-inet6)
 - [const `SOCK_STREAM`](#const-sock-stream)
@@ -119,52 +108,20 @@
   - `syscall4`
   - `syscall5`
   - `syscall6`
+- `uranite.os.arch.native.syscall`
+  - `SYS_SOCKET`
+  - `SYS_CONNECT`
+  - `SYS_ACCEPT`
+  - `SYS_SENDTO`
+  - `SYS_RECVFROM`
+  - `SYS_BIND`
+  - `SYS_LISTEN`
+  - `SYS_SETSOCKOPT`
+  - `SYS_GETSOCKNAME`
+  - `SYS_GETPEERNAME`
+  - `SYS_SHUTDOWN`
 - `uranite.os.syscall.result`
   - `SyscallResult`
-
-## const `SYS_SOCKET`
-
-Linux x86_64 syscall number for socket(2).
-
-## const `SYS_CONNECT`
-
-Linux x86_64 syscall number for connect(2).
-
-## const `SYS_ACCEPT`
-
-Linux x86_64 syscall number for accept(2).
-
-## const `SYS_SENDTO`
-
-Linux x86_64 syscall number for sendto(2).
-
-## const `SYS_RECVFROM`
-
-Linux x86_64 syscall number for recvfrom(2).
-
-## const `SYS_BIND`
-
-Linux x86_64 syscall number for bind(2).
-
-## const `SYS_LISTEN`
-
-Linux x86_64 syscall number for listen(2).
-
-## const `SYS_SETSOCKOPT`
-
-Linux x86_64 syscall number for setsockopt(2).
-
-## const `SYS_GETSOCKNAME`
-
-Linux x86_64 syscall number for getsockname(2).
-
-## const `SYS_GETPEERNAME`
-
-Linux x86_64 syscall number for getpeername(2).
-
-## const `SYS_SHUTDOWN`
-
-Linux x86_64 syscall number for shutdown(2).
 
 ## const `AF_INET`
 

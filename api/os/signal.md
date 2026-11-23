@@ -6,8 +6,6 @@
 - [const `SIGINT`](#const-sigint)
 - [const `SIGTERM`](#const-sigterm)
 - [const `SIGKILL`](#const-sigkill)
-- [const `SYS_RT_SIGACTION`](#const-sys-rt-sigaction)
-- [const `SYS_MMAP`](#const-sys-mmap)
 - [const `SA_RESTORER`](#const-sa-restorer)
 - [const `SIGSET_SIZE`](#const-sigset-size)
 - [const `SIGACTION_FIELDS`](#const-sigaction-fields)
@@ -32,16 +30,15 @@
   - `Memory`
 - `uranite.os.arch.native.memory`
   - `memoryToPtr`
+- `uranite.os.arch.native.syscall`
+  - `SYS_MMAP`
+  - `SYS_RT_SIGACTION`
 
 ## const `SIGINT`
 
 ## const `SIGTERM`
 
 ## const `SIGKILL`
-
-## const `SYS_RT_SIGACTION`
-
-## const `SYS_MMAP`
 
 ## const `SA_RESTORER`
 
